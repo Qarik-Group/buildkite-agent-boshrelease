@@ -1,0 +1,6 @@
+---
+name: buildkite-agent
+packages: []
+templates:
+  ignoreme: ignoreme
+properties: {}

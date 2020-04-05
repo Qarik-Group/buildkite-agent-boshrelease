@@ -1,0 +1,7 @@
+---
+- type: replace
+  path: /releases/name=buildkite-agent
+  value:
+    name: buildkite-agent
+    version: create
+    url: file://.
