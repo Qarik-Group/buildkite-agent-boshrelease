@@ -1,1 +1,4 @@
---- {}
+buildkite-agent-linux-amd64-3.20.0.tar.gz:
+  size: 12907563
+  object_id: e9a2e533-478a-435c-6ecb-7a3ad639280e
+  sha: sha256:2ae35e8da54a5f212ca6d9ec928a96ba34540c00b0e1692d5f9e460a2bfac8ec
