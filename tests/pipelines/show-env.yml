@@ -1,0 +1,3 @@
+steps:
+- label: ":desktop_computer:"
+  command: ./tests/scripts/show_environment.sh
