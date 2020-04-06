@@ -2,7 +2,10 @@
 name: buildkite-agent
 packages: [buildkite-agent]
 templates:
+  config/bpm.yml: config/bpm.yml
   config/buildkite-agent.cfg: config/buildkite-agent.cfg
+  bin/bootstrap.sh: bin/bootstrap.sh
+
 properties:
   token:
     description: The Agent Token is available on https://buildkite.com/organizations/-/agents

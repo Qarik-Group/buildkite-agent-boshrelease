@@ -1,0 +1,5 @@
+check process buildkite-agent
+  with pidfile /var/vcap/sys/run/bpm/buildkite-agent/buildkite-agent.pid
+  start program "/var/vcap/jobs/bpm/bin/bpm start buildkite-agent"
+  stop program "/var/vcap/jobs/bpm/bin/bpm stop buildkite-agent"
+  group vcap
