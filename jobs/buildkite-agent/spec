@@ -2,9 +2,12 @@
 name: buildkite-agent
 packages: [buildkite-agent]
 templates:
-  config/bpm.yml: config/bpm.yml
   config/buildkite-agent.cfg: config/buildkite-agent.cfg
   bin/bootstrap.sh: bin/bootstrap.sh
+  bin/ctl: bin/ctl
+  bin/monit_debugger: bin/monit_debugger
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
 
 properties:
   token:
