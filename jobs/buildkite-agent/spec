@@ -3,6 +3,8 @@ name: buildkite-agent
 packages: [buildkite-agent]
 templates:
   config/buildkite-agent.cfg: config/buildkite-agent.cfg
+  hooks/environment: hooks/environment
+  hooks/pre-checkout: hooks/pre-checkout
   bin/bootstrap.sh: bin/bootstrap.sh
   bin/pre-start: bin/pre-start
   bin/ctl: bin/ctl
@@ -35,3 +37,11 @@ properties:
   no_color:
     default: false
     description: Don't show colors in logging
+
+  # https://buildkite.com/docs/agent/v3/hooks
+  hooks.environment:
+    default: ""
+    description: Runs before all other hooks. Useful for exposing secret keys and adding strict checks.
+  hooks.pre-checkout:
+    default: ""
+    description: Script runs before checkout

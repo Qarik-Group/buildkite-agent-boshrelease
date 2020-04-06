@@ -32,6 +32,9 @@ instance_groups:
       tags:
         - queue=default
         - docker-available
+      hooks:
+        environment: |-
+          export FOOBAR=yeah
 
 
 variables: []
