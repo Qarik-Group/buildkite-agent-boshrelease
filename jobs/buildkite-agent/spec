@@ -4,6 +4,7 @@ packages: [buildkite-agent]
 templates:
   config/buildkite-agent.cfg: config/buildkite-agent.cfg
   bin/bootstrap.sh: bin/bootstrap.sh
+  bin/pre-start: bin/pre-start
   bin/ctl: bin/ctl
   bin/monit_debugger: bin/monit_debugger
   helpers/ctl_setup.sh: helpers/ctl_setup.sh
@@ -13,6 +14,9 @@ properties:
   token:
     description: The Agent Token is available on https://buildkite.com/organizations/-/agents
 
+  spawn:
+    default: 5
+    description: The number of agents to spawn in parallel
   tags:
     description: |
       [array] Tags for the agent (default is "queue=default")
