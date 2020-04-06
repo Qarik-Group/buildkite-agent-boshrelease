@@ -12,3 +12,13 @@ templates:
 properties:
   token:
     description: The Agent Token is available on https://buildkite.com/organizations/-/agents
+
+  priority:
+    default: 1
+    description: The priority of the agent (higher priorities are assigned work first)
+  debug:
+    default: false
+    description: Enable debug mode
+  no_color:
+    default: false
+    description: Don't show colors in logging
