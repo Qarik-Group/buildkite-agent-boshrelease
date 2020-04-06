@@ -21,6 +21,11 @@ instance_groups:
     release: buildkite-agent
     properties:
       token: ((token))
+      tags:
+        - queue=default
+        - os=linux
+        - docker-available
+
 
 variables: []
 

@@ -13,6 +13,15 @@ properties:
   token:
     description: The Agent Token is available on https://buildkite.com/organizations/-/agents
 
+  tags:
+    description: |
+      [array] Tags for the agent (default is "queue=default")
+    default: []
+    examples:
+      - queue=default
+      - os=linux
+      - bosh
+      - docker
   priority:
     default: 1
     description: The priority of the agent (higher priorities are assigned work first)
