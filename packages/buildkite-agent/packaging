@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -eu # report the usage of uninitialized variables
+
+# $BOSH_COMPILE_TARGET - where this package & spec'd source files are available
+# $BOSH_INSTALL_TARGET - where you copy/install files to be included in package
+
+cd $BOSH_INSTALL_TARGET
+tar xfz $BOSH_COMPILE_TARGET/buildkite-agent-linux-amd64-*.tar.gz
+
+mkdir -p bin
+mv buildkite-agent bin/

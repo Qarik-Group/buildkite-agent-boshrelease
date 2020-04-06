@@ -1,0 +1,5 @@
+---
+name: buildkite-agent
+dependencies: []
+files:
+- buildkite-agent-linux-amd64-*.tar.gz
