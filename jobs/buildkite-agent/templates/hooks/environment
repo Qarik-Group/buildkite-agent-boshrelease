@@ -3,4 +3,6 @@
   source /var/vcap/jobs/awscliv2/env
 }
 
+export DOCKER_HOST=unix:///var/vcap/sys/run/docker/docker.sock
+
 <%= p("hooks.environment") %>
