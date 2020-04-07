@@ -1,5 +1,5 @@
 steps:
-  - label: ":ubuntu:"
+  - label: ":docker:"
     command: ./tests/scripts/show_environment.sh
     plugins:
       - docker#v3.5.0:
