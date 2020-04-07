@@ -25,6 +25,10 @@ meta:
     name:   ((git-commit-name))
 
   bosh:
+    stemcell:
+      major: 621
+      cpi: warden-boshlite
+      os: ubuntu-xenial
     target:   https://10.128.4.73:25555
     cacert:   ((thunder-dome.ca-certificate))
     username: ((thunder-dome.username))

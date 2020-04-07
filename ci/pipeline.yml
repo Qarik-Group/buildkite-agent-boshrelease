@@ -47,8 +47,9 @@ meta:
 
   bosh:
     stemcell:
+      # override in settings.yml
       major: 621
-      cpi: vsphere-esxi
+      cpi: warden-boshlite
       os: ubuntu-xenial
     target:   ((bosh_environment))
     cacert:   ((bosh_ca_cert))
