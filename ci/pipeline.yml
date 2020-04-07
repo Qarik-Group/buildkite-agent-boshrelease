@@ -449,6 +449,8 @@ jobs:
             BOSH_CA_CERT:         (( grab meta.bosh.cacert ))
             BOSH_CLIENT:          (( grab meta.bosh.username ))
             BOSH_CLIENT_SECRET:   (( grab meta.bosh.password ))
+            STEMCELL_CPI:         (( grab meta.bosh.stemcell.cpi ))
+            STEMCELL_OS:          (( grab meta.bosh.stemcell.os ))
       - put: compiled-release
         params:
           file: (( concat "compiled-release/compiled-releases/" meta.name "/*.tgz" ))
@@ -561,7 +563,7 @@ resources:
   # - name: ubuntu-xenial-stemcell-621
   #   type: bosh-io-stemcell
   #   source:
-  #     name: bosh-aws-xen-hvm-ubuntu-xenial-go_agent
+  #     name: bosh-vsphere-esxi-ubuntu-xenial-go_agent
   #     version_family: 621.latest
   - name: (( concat meta.bosh.stemcell.os "-stemcell-" meta.bosh.stemcell.major ))
     type: bosh-io-stemcell
