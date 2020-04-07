@@ -20,7 +20,6 @@ case $1 in
     exec chpst -u vcap:vcap \
       buildkite-agent start \
         --config /var/vcap/jobs/buildkite-agent/config/buildkite-agent.cfg \
-        --bootstrap-script /var/vcap/jobs/buildkite-agent/bin/bootstrap.sh \
           >> "$LOG_DIR/$JOB_NAME.log" 2>&1
 
     ;;

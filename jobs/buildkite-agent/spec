@@ -8,7 +8,6 @@ templates:
   hooks/pre-command: hooks/pre-command
   hooks/post-command: hooks/post-command
   hooks/pre-exit: hooks/pre-exit
-  bin/bootstrap.sh: bin/bootstrap.sh
   bin/pre-start: bin/pre-start
   bin/ctl: bin/ctl
   bin/monit_debugger: bin/monit_debugger
