@@ -68,6 +68,9 @@ releases:
   url: https://s3.amazonaws.com/awscli2-boshrelease/compiled-releases/awscli2/awscli2-1.0.1-ubuntu-xenial-621.61-20200405-113949-162297918-20200405113953.tgz
   version: 1.0.1
 - name: buildkite-agent
-  sha1: 5bc847a1243ac8c46fe6d0f763f2afc086e9fa46
-  url: https://github.com/starkandwayne/buildkite-agent-boshrelease/releases/download/v1.0.0/buildkite-agent-1.0.0.tgz
+  sha1: b21c86e68b04c3cb8db096f2d3af29a87188e694
+  stemcell:
+    os: ubuntu-xenial
+    version: "621.64"
+  url: https://s3.amazonaws.com/buildkite-agent-boshrelease/compiled-releases/buildkite-agent/buildkite-agent-1.0.0-ubuntu-xenial-621.64-20200407-010400-86095414-20200407010402.tgz
   version: 1.0.0
