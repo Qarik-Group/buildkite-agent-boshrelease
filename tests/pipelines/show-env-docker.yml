@@ -1,0 +1,13 @@
+steps:
+  - label: ":ubuntu:"
+    command: ./tests/scripts/show_environment.sh
+    plugins:
+      - docker#v3.5.0:
+          image: "ubuntu:latest"
+          propagate-environment: true
+  - label: ":ski: missing bash"
+    command: ./tests/scripts/show_environment.sh
+    plugins:
+      - docker#v3.5.0:
+          image: "alpine:latest"
+          propagate-environment: true
