@@ -52,14 +52,14 @@ update:
   serial: false
 
 releases:
-- name: "docker"
-  version: "35.3.4"
-  url: "https://bosh.io/d/github.com/cloudfoundry-incubator/docker-boshrelease?v=35.3.4"
-  sha1: "8dcacf558067ed5302e30e4c8de928ee7917695e"
-- name: "os-conf"
-  version: "22.0.0"
-  url: "https://bosh.io/d/github.com/cloudfoundry/os-conf-release?v=22.0.0"
-  sha1: "6946056ad69ae378cb89c9ef76daf66370a7dc6a"
+- name: docker
+  sha1: 8dcacf558067ed5302e30e4c8de928ee7917695e
+  url: https://bosh.io/d/github.com/cloudfoundry-incubator/docker-boshrelease?v=35.3.4
+  version: 35.3.4
+- name: os-conf
+  sha1: 6946056ad69ae378cb89c9ef76daf66370a7dc6a
+  url: https://bosh.io/d/github.com/cloudfoundry/os-conf-release?v=22.0.0
+  version: 22.0.0
 - name: awscli2
   sha1: 6c2ca326d180f486ffe0b221381ccc466572971e
   stemcell:
@@ -68,6 +68,6 @@ releases:
   url: https://s3.amazonaws.com/awscli2-boshrelease/compiled-releases/awscli2/awscli2-1.0.1-ubuntu-xenial-621.61-20200405-113949-162297918-20200405113953.tgz
   version: 1.0.1
 - name: buildkite-agent
-  version: create  # TODO: update after first final release
-  url: .           # TODO: update after first final release
-  # sha1:            TODO: update after first final release
+  sha1: 5bc847a1243ac8c46fe6d0f763f2afc086e9fa46
+  url: https://github.com/starkandwayne/buildkite-agent-boshrelease/releases/download/v1.0.0/buildkite-agent-1.0.0.tgz
+  version: 1.0.0
