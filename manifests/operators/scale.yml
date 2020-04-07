@@ -1,0 +1,7 @@
+- type: replace
+  path: /instance_groups/name=buildkite-agent/instances
+  value: ((instances))
+
+- type: replace
+  path: /instance_groups/name=buildkite-agent/jobs/name=buildkite-agent/properties/spawn
+  value: ((spawn))
