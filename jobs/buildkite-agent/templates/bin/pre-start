@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir -p /var/vcap/sys/run/buildkite-agent/builds
-chown vcap:vcap -R /var/vcap/sys/run/buildkite-agent/builds
+mkdir -p /var/vcap/data/buildkite-agent/builds
+chown vcap:vcap -R /var/vcap/data/buildkite-agent/builds
 
-mkdir -p /var/vcap/sys/run/buildkite-agent/plugins
-chown vcap:vcap -R /var/vcap/sys/run/buildkite-agent/plugins
+mkdir -p /var/vcap/data/buildkite-agent/plugins
+chown vcap:vcap -R /var/vcap/data/buildkite-agent/plugins
