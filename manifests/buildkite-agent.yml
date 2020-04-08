@@ -28,14 +28,9 @@ instance_groups:
     properties:
       token: ((token))
       spawn: 2
-      debug: false
       tags:
         - queue=default
         - docker-available
-      hooks:
-        environment: |-
-          export FOOBAR=yeah
-
 
 variables: []
 
