@@ -424,7 +424,7 @@ jobs:
     plan:
       - get: git
       - get: github
-        trigger: true
+        trigger: false
       - get: (( concat meta.bosh.stemcell.os "-stemcell-" meta.bosh.stemcell.major ))
         params: {tarball: false}
       - task: export-release
@@ -464,7 +464,7 @@ jobs:
             - get: git
             - get: github
               passed: [compile-release]
-              trigger: true
+              trigger: false
             - get: (( concat meta.bosh.stemcell.os "-stemcell-" meta.bosh.stemcell.major ))
               passed: [compile-release]
               params: {tarball: false}
