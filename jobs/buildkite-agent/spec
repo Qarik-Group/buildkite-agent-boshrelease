@@ -3,6 +3,7 @@ name: buildkite-agent
 packages: [buildkite-agent]
 templates:
   config/buildkite-agent.cfg: config/buildkite-agent.cfg
+  config/git-ssh-private.key: config/git-ssh-private.key
   hooks/environment: hooks/environment
   hooks/pre-checkout: hooks/pre-checkout
   hooks/pre-command: hooks/pre-command
@@ -17,6 +18,10 @@ templates:
 properties:
   token:
     description: The Agent Token is available on https://buildkite.com/organizations/-/agents
+
+  git-ssh-private-key:
+    description: SSH private key for git clone
+    default: ""
 
   spawn:
     default: 5

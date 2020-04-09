@@ -1,7 +1,15 @@
 #!/bin/bash
 
+set -eux
+
 mkdir -p /var/vcap/data/buildkite-agent/builds
 chown vcap:vcap -R /var/vcap/data/buildkite-agent/builds
 
 mkdir -p /var/vcap/data/buildkite-agent/plugins
 chown vcap:vcap -R /var/vcap/data/buildkite-agent/plugins
+
+mkdir -p /home/vcap/.ssh
+chmod 700 /home/vcap/.ssh
+cp /var/vcap/jobs/buildkite-agent/config/git-ssh-private.key /home/vcap/.ssh/id_rsa
+chmod 600 /home/vcap/.ssh/id_rsa
+chown vcap:vcap -R /home/vcap/.ssh
