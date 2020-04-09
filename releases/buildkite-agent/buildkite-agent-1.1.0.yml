@@ -1,0 +1,21 @@
+name: buildkite-agent
+version: 1.1.0
+commit_hash: fb52247
+uncommitted_changes: false
+jobs:
+- name: buildkite-agent
+  version: 9b516ae89a7899b426e71467f40955525cb0d9dbe28c6ecd3db48c94be51f4a9
+  fingerprint: 9b516ae89a7899b426e71467f40955525cb0d9dbe28c6ecd3db48c94be51f4a9
+  sha1: sha256:30ff2eca1b0018a8e5e7ea4773acd8d49b4c5a6fc564d16bb53e7c4d4e5ea2a4
+  packages:
+  - buildkite-agent
+packages:
+- name: buildkite-agent
+  version: 6b509ad9a3846ad02a3deb14529737b889a665b40310283056833cbcfbc81a29
+  fingerprint: 6b509ad9a3846ad02a3deb14529737b889a665b40310283056833cbcfbc81a29
+  sha1: sha256:d781192618e484f70648b27ecf227ada7b9b64b335e9260b636ca1d1b619e499
+  dependencies: []
+license:
+  version: 2c57a4e32e619009de871a249e59006cd74b972a6b6e80ee20fd363cd0baa572
+  fingerprint: 2c57a4e32e619009de871a249e59006cd74b972a6b6e80ee20fd363cd0baa572
+  sha1: sha256:9f129360764d2f2e61d1857ad1fb4bfd25892365316ee792d40f92601ccb35fd
